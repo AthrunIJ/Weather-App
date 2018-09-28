@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="credit_desc">CREDIT Climacons by @adamwhitcroft</string>
+    <string name="horizontalmargin16">16dp</string>
+    <string name="verticalmargin16">16dp</string>
+    <string name="button_refresh">Refresh</string>
+    <string name="scale06">0.6</string>
+    <string name="scale07">0.7</string>
+    <string name="custommargintop">420dp</string>
+</resources>
