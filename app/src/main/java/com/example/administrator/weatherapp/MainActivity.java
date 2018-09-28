@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
                     final JSONObject mainJSON = weatherJSON.getJSONObject("main");
 
-                    tvTemperature.setText(String.valueOf(mainJSON.getDouble("temp")));
+                    tvTemperature.setText(String.valueOf(mainJSON.getDouble("temp")-273));
 
                     tvHumidity.setText(String.valueOf(mainJSON.getInt("humidity"))+"%");
 
