@@ -36,8 +36,7 @@
             android:text="@string/button_refresh"
             android:textColor="@color/white"
             android:textSize="25dp"
-            android:clickable="true"
-            android:onClick="onClick"/>
+            android:clickable="true" />
 
         <TextView
             android:id="@+id/temperature"
@@ -62,8 +61,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_orientation="horizontal"
-            android:layout_marginTop="@string/custommargintop"
+            android:orientation="horizontal"
+            android:layout_below="@id/icon"
             android:layout_centerHorizontal="true" >
 
             <TextView
@@ -84,7 +83,7 @@
                 android:drawableLeft="@drawable/ic_humidity"
                 android:scaleX="@string/scale06"
                 android:scaleY="@string/scale06"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/cloudiness"
