@@ -100,13 +100,13 @@ public class MainActivity extends AppCompatActivity {
                     final JSONObject weatherJSON = new JSONObject(result);
                     tvLocation.setText(weatherJSON.getString("name")+","+weatherJSON.getJSONObject("sys").getString("country"));
 
-                    tvWindSpeed.setText(String.valueOf(weatherJSON.getJSONObject("wind").getDouble("speed"))+"mps");
+                    tvWindSpeed.setText(String.valueOf(weatherJSON.getJSONObject("wind").getDouble("speed"))+"m/s");
 
                     tvCloudiness.setText(String.valueOf(weatherJSON.getJSONObject("clouds").getInt("all")));
 
                     final JSONObject mainJSON = weatherJSON.getJSONObject("main");
 
-                    tvTemperature.setText(String.valueOf(mainJSON.getDouble("temp")-273));
+                    tvTemperature.setText(String.format("%.2f",mainJSON.getDouble("temp")-273.15));
 
                     tvHumidity.setText(String.valueOf(mainJSON.getInt("humidity"))+"%");
 
